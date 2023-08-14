@@ -27,6 +27,11 @@ struct ProfileView: View {
     @State var isShowPhoneNo: Bool = true
     @ObservedObject var dataStore: ProfileDataStore
     
+    func fetchProfile() {
+        let request = ProfileModel.Request()
+        interactor?.startDoingSomething(request: request)
+    }
+    
     var body: some View {
         List {
             Toggle(isOn: $isShowPhoneNo) {
@@ -43,8 +48,8 @@ struct ProfileView: View {
             }
             Text(dataStore.summary)
                 .font(.body)
-            .task {
-                interactor?.startDoingSomething(request: ProfileModel.Request())
+            .onAppear() {
+                fetchProfile()
             }
         }
     }

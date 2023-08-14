@@ -9,12 +9,10 @@ import Foundation
 
 protocol ProfileInteractorInterface {
     func startDoingSomething(request: ProfileModel.Request)
-    var model: ProfileModel.Response! { get set }
 }
 
 final class ProfileInteractor: ProfileInteractorInterface {
     var presenter: ProfilePresenterInterface?
-    var model: ProfileModel.Response!
     
     var worker: ProfileWorker = ProfileWorker()
         
@@ -32,8 +30,7 @@ final class ProfileInteractor: ProfileInteractorInterface {
                                                         phoneNo: res["phone_no"] ?? "",
                                                         linkedin: res["linkedin"] ?? "",
                                                         summary: res["summary"] ?? "")
-                    self.model = profile
-                    self.presenter?.presentSomething(response: self.model)
+                    self.presenter?.presentSomething(response: profile)
                 }
             case .failure(let errCode):
                 print(errCode)

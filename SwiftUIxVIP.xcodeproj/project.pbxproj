@@ -15,10 +15,23 @@
 		042A8A432A88AF30004E134C /* ProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042A8A3A2A88AF30004E134C /* ProfileInteractor.swift */; };
 		042A8A442A88AF30004E134C /* ProfileConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042A8A3B2A88AF30004E134C /* ProfileConfigurator.swift */; };
 		042A8B332A89DC9F004E134C /* ProfileDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042A8B322A89DC9F004E134C /* ProfileDataStore.swift */; };
+		04BACEA32A8A24B8000B1357 /* ProfileViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BACEA22A8A24B8000B1357 /* ProfileViewTests.swift */; };
+		04BACEAB2A8A2C9F000B1357 /* ProfileInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BACEAA2A8A2C9F000B1357 /* ProfileInteractorTests.swift */; };
+		04BACEAD2A8A3B0A000B1357 /* ProfilePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BACEAC2A8A3B0A000B1357 /* ProfilePresenterTests.swift */; };
 		04CE7F1F2A88885A0069732B /* SwiftUIxVIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE7F1E2A88885A0069732B /* SwiftUIxVIP.swift */; };
 		04CE7F232A88885A0069732B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CE7F222A88885A0069732B /* Assets.xcassets */; };
 		04CE7F262A88885A0069732B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CE7F252A88885A0069732B /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04BACEA42A8A24B8000B1357 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04CE7F132A88885A0069732B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04CE7F1A2A88885A0069732B;
+			remoteInfo = SwiftUIxVIP;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		042A8A352A88AF30004E134C /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
@@ -30,6 +43,10 @@
 		042A8A3B2A88AF30004E134C /* ProfileConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileConfigurator.swift; sourceTree = "<group>"; };
 		042A8B322A89DC9F004E134C /* ProfileDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataStore.swift; sourceTree = "<group>"; };
 		042A8B7A2A89EC9B004E134C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		04BACEA02A8A24B8000B1357 /* SwiftUIxVIPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIxVIPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04BACEA22A8A24B8000B1357 /* ProfileViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewTests.swift; sourceTree = "<group>"; };
+		04BACEAA2A8A2C9F000B1357 /* ProfileInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInteractorTests.swift; sourceTree = "<group>"; };
+		04BACEAC2A8A3B0A000B1357 /* ProfilePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenterTests.swift; sourceTree = "<group>"; };
 		04CE7F1B2A88885A0069732B /* SwiftUIxVIP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIxVIP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CE7F1E2A88885A0069732B /* SwiftUIxVIP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIxVIP.swift; sourceTree = "<group>"; };
 		04CE7F222A88885A0069732B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -37,6 +54,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		04BACE9D2A8A24B8000B1357 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		04CE7F182A88885A0069732B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -69,10 +93,37 @@
 			path = Worker;
 			sourceTree = "<group>";
 		};
+		04BACE942A8A1359000B1357 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				042A8A212A88AEEE004E134C /* Profile */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		04BACEA12A8A24B8000B1357 /* SwiftUIxVIPTests */ = {
+			isa = PBXGroup;
+			children = (
+				04BACEA92A8A24C7000B1357 /* Profile */,
+			);
+			path = SwiftUIxVIPTests;
+			sourceTree = "<group>";
+		};
+		04BACEA92A8A24C7000B1357 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				04BACEA22A8A24B8000B1357 /* ProfileViewTests.swift */,
+				04BACEAA2A8A2C9F000B1357 /* ProfileInteractorTests.swift */,
+				04BACEAC2A8A3B0A000B1357 /* ProfilePresenterTests.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		04CE7F122A88885A0069732B = {
 			isa = PBXGroup;
 			children = (
 				04CE7F1D2A88885A0069732B /* SwiftUIxVIP */,
+				04BACEA12A8A24B8000B1357 /* SwiftUIxVIPTests */,
 				04CE7F1C2A88885A0069732B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				04CE7F1B2A88885A0069732B /* SwiftUIxVIP.app */,
+				04BACEA02A8A24B8000B1357 /* SwiftUIxVIPTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,7 +142,7 @@
 			children = (
 				042A8B7A2A89EC9B004E134C /* Info.plist */,
 				042A8A462A88C493004E134C /* Worker */,
-				042A8A212A88AEEE004E134C /* Profile */,
+				04BACE942A8A1359000B1357 /* Scenes */,
 				04CE7F1E2A88885A0069732B /* SwiftUIxVIP.swift */,
 				04CE7F222A88885A0069732B /* Assets.xcassets */,
 				04CE7F242A88885A0069732B /* Preview Content */,
@@ -109,6 +161,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		04BACE9F2A8A24B8000B1357 /* SwiftUIxVIPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04BACEA62A8A24B8000B1357 /* Build configuration list for PBXNativeTarget "SwiftUIxVIPTests" */;
+			buildPhases = (
+				04BACE9C2A8A24B8000B1357 /* Sources */,
+				04BACE9D2A8A24B8000B1357 /* Frameworks */,
+				04BACE9E2A8A24B8000B1357 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04BACEA52A8A24B8000B1357 /* PBXTargetDependency */,
+			);
+			name = SwiftUIxVIPTests;
+			productName = SwiftUIxVIPTests;
+			productReference = 04BACEA02A8A24B8000B1357 /* SwiftUIxVIPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		04CE7F1A2A88885A0069732B /* SwiftUIxVIP */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04CE7F292A88885A0069732B /* Build configuration list for PBXNativeTarget "SwiftUIxVIP" */;
@@ -136,6 +206,10 @@
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					04BACE9F2A8A24B8000B1357 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 04CE7F1A2A88885A0069732B;
+					};
 					04CE7F1A2A88885A0069732B = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -155,11 +229,19 @@
 			projectRoot = "";
 			targets = (
 				04CE7F1A2A88885A0069732B /* SwiftUIxVIP */,
+				04BACE9F2A8A24B8000B1357 /* SwiftUIxVIPTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		04BACE9E2A8A24B8000B1357 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		04CE7F192A88885A0069732B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -172,6 +254,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		04BACE9C2A8A24B8000B1357 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04BACEAD2A8A3B0A000B1357 /* ProfilePresenterTests.swift in Sources */,
+				04BACEAB2A8A2C9F000B1357 /* ProfileInteractorTests.swift in Sources */,
+				04BACEA32A8A24B8000B1357 /* ProfileViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		04CE7F172A88885A0069732B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -190,7 +282,51 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		04BACEA52A8A24B8000B1357 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04CE7F1A2A88885A0069732B /* SwiftUIxVIP */;
+			targetProxy = 04BACEA42A8A24B8000B1357 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		04BACEA72A8A24B8000B1357 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9L4ETSWFUJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = csukra.SwiftUIxVIPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUIxVIP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftUIxVIP";
+			};
+			name = Debug;
+		};
+		04BACEA82A8A24B8000B1357 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9L4ETSWFUJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = csukra.SwiftUIxVIPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUIxVIP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftUIxVIP";
+			};
+			name = Release;
+		};
 		04CE7F272A88885A0069732B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -366,6 +502,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		04BACEA62A8A24B8000B1357 /* Build configuration list for PBXNativeTarget "SwiftUIxVIPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04BACEA72A8A24B8000B1357 /* Debug */,
+				04BACEA82A8A24B8000B1357 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		04CE7F162A88885A0069732B /* Build configuration list for PBXProject "SwiftUIxVIP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

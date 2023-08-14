@@ -12,15 +12,14 @@ protocol ProfilePresenterInterface {
 }
 
 final class ProfilePresenter: ProfilePresenterInterface {
-    var view: ProfileView?
+    var view: ProfileDisplayLogic?
     
     func presentSomething(response: ProfileModel.Response) {
         let fullName = response.firstName + " " + response.lastName
         view?.displaySomething(display: ProfileModel.ViewModel(fullName: fullName,
                                                                phoneNo: response.phoneNo,
                                                                linkedin: response.linkedin,
-                                                               summary: response.summary
-                                                              ))
+                                                               summary: response.summary))
     }
 }
 
