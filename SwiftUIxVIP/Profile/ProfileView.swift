@@ -8,28 +8,50 @@
 import SwiftUI
 
 protocol ProfileDisplayLogic {
-    func displaySomething(display: ProfileModel.ViewModel.Displayed)
+    func displaySomething(display: ProfileModel.ViewModel)
 }
 
 extension ProfileView: ProfileDisplayLogic {
-    func displaySomething(display: ProfileModel.ViewModel.Displayed) {}
+    func displaySomething(display: ProfileModel.ViewModel) {
+        dataStore.fullName = display.fullName
+        dataStore.phoneNo = display.phoneNo
+        dataStore.linkedIn = display.linkedin
+        dataStore.summary = display.summary
+    }
 }
 
 struct ProfileView: View {
     var interactor: ProfileInteractorInterface?
     var router: ProfileRouterInterface?
     
+    @State var isShowPhoneNo: Bool = true
+    @ObservedObject var dataStore: ProfileDataStore
+    
     var body: some View {
-        VStack {
-            Text("Profile")
-        }.task {
-            interactor?.startDoingSomething(request: ProfileModel.Request())
+        List {
+            Toggle(isOn: $isShowPhoneNo) {
+                Text("Show Phone No").bold()}
+            VStack(alignment: .leading, spacing: 4) {
+                Text(dataStore.fullName)
+                    .font(.title)
+                if isShowPhoneNo {
+                    Text(dataStore.phoneNo)
+                        .font(.headline)
+                }
+                Text(dataStore.linkedIn)
+                    .font(.subheadline)
+            }
+            Text(dataStore.summary)
+                .font(.body)
+            .task {
+                interactor?.startDoingSomething(request: ProfileModel.Request())
+            }
         }
     }
 }
 
 struct Profile_Previews: PreviewProvider {
     static var previews: some View {
-            ProfileView()
+        ProfileView(dataStore: ProfileDataStore()).configure()
     }
 }

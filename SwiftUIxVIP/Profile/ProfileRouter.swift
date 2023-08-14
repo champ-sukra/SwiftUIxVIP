@@ -12,8 +12,8 @@ protocol ProfileRouterInterface {
 }
 
 final class ProfileRouter: ProfileRouterInterface {
-  var view: ProfileView?
-
+    var view: ProfileView?
+    
     func navigateToViewController() {
         // TODO: navigate to viewController
     }

@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUIxVIPApp: App {
     var body: some Scene {
         WindowGroup {
-            ProfileView()
+            ProfileView(dataStore: ProfileDataStore()).configure()
         }
     }
 }

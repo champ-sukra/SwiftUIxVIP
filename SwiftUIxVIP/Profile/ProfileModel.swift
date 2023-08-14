@@ -12,10 +12,19 @@ struct ProfileModel {
     struct Request {}
     
     // Data struct sent to Presenter
-    struct Respoonse {}
+    struct Response {
+        var firstName: String
+        var lastName: String
+        var phoneNo: String
+        var linkedin: String
+        var summary: String
+    }
     
-    // Data struct sent to ViewController
+    // Data struct sent to View
     struct ViewModel {
-        struct Displayed {}
+        var fullName: String
+        var phoneNo: String
+        var linkedin: String
+        var summary: String
     }
 }
