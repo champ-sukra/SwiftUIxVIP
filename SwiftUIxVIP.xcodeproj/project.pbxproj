@@ -21,6 +21,8 @@
 		04CE7F1F2A88885A0069732B /* SwiftUIxVIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE7F1E2A88885A0069732B /* SwiftUIxVIP.swift */; };
 		04CE7F232A88885A0069732B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CE7F222A88885A0069732B /* Assets.xcassets */; };
 		04CE7F262A88885A0069732B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CE7F252A88885A0069732B /* Preview Assets.xcassets */; };
+		392B65680EF8BB6131B96FDA /* Pods_SwiftUIxVIP_SwiftUIxVIPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97C31D0742E20571286B87DF /* Pods_SwiftUIxVIP_SwiftUIxVIPTests.framework */; };
+		9E482BFA865ABE92974C5DED /* Pods_SwiftUIxVIP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA7C7385547462DEC3915019 /* Pods_SwiftUIxVIP.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,12 @@
 		04CE7F1E2A88885A0069732B /* SwiftUIxVIP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIxVIP.swift; sourceTree = "<group>"; };
 		04CE7F222A88885A0069732B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04CE7F252A88885A0069732B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4AB891A285482FE2ED58117A /* Pods-SwiftUIxVIP-SwiftUIxVIPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIxVIP-SwiftUIxVIPTests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUIxVIP-SwiftUIxVIPTests/Pods-SwiftUIxVIP-SwiftUIxVIPTests.debug.xcconfig"; sourceTree = "<group>"; };
+		97C31D0742E20571286B87DF /* Pods_SwiftUIxVIP_SwiftUIxVIPTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUIxVIP_SwiftUIxVIPTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D58D703B24C06D77BC328C9 /* Pods-SwiftUIxVIP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIxVIP.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUIxVIP/Pods-SwiftUIxVIP.debug.xcconfig"; sourceTree = "<group>"; };
+		C8CE9A06BD5322DABC55B4F4 /* Pods-SwiftUIxVIP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIxVIP.release.xcconfig"; path = "Target Support Files/Pods-SwiftUIxVIP/Pods-SwiftUIxVIP.release.xcconfig"; sourceTree = "<group>"; };
+		CA7C7385547462DEC3915019 /* Pods_SwiftUIxVIP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUIxVIP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9A02A37597CB017703951DE /* Pods-SwiftUIxVIP-SwiftUIxVIPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIxVIP-SwiftUIxVIPTests.release.xcconfig"; path = "Target Support Files/Pods-SwiftUIxVIP-SwiftUIxVIPTests/Pods-SwiftUIxVIP-SwiftUIxVIPTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				392B65680EF8BB6131B96FDA /* Pods_SwiftUIxVIP_SwiftUIxVIPTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E482BFA865ABE92974C5DED /* Pods_SwiftUIxVIP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +135,8 @@
 				04CE7F1D2A88885A0069732B /* SwiftUIxVIP */,
 				04BACEA12A8A24B8000B1357 /* SwiftUIxVIPTests */,
 				04CE7F1C2A88885A0069732B /* Products */,
+				C2D2C295AD9CF6B6052F72F2 /* Pods */,
+				6CF9AAD3F4CAB0B078CA210C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -158,6 +170,27 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		6CF9AAD3F4CAB0B078CA210C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA7C7385547462DEC3915019 /* Pods_SwiftUIxVIP.framework */,
+				97C31D0742E20571286B87DF /* Pods_SwiftUIxVIP_SwiftUIxVIPTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C2D2C295AD9CF6B6052F72F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D58D703B24C06D77BC328C9 /* Pods-SwiftUIxVIP.debug.xcconfig */,
+				C8CE9A06BD5322DABC55B4F4 /* Pods-SwiftUIxVIP.release.xcconfig */,
+				4AB891A285482FE2ED58117A /* Pods-SwiftUIxVIP-SwiftUIxVIPTests.debug.xcconfig */,
+				E9A02A37597CB017703951DE /* Pods-SwiftUIxVIP-SwiftUIxVIPTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -165,9 +198,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04BACEA62A8A24B8000B1357 /* Build configuration list for PBXNativeTarget "SwiftUIxVIPTests" */;
 			buildPhases = (
+				BDDFBD1AEA2C86A059FDABBD /* [CP] Check Pods Manifest.lock */,
 				04BACE9C2A8A24B8000B1357 /* Sources */,
 				04BACE9D2A8A24B8000B1357 /* Frameworks */,
 				04BACE9E2A8A24B8000B1357 /* Resources */,
+				44B14E77BE8161C63EB1E307 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -183,6 +218,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04CE7F292A88885A0069732B /* Build configuration list for PBXNativeTarget "SwiftUIxVIP" */;
 			buildPhases = (
+				D73F769F4931019B537AECDB /* [CP] Check Pods Manifest.lock */,
 				04CE7F172A88885A0069732B /* Sources */,
 				04CE7F182A88885A0069732B /* Frameworks */,
 				04CE7F192A88885A0069732B /* Resources */,
@@ -253,6 +289,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		44B14E77BE8161C63EB1E307 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIxVIP-SwiftUIxVIPTests/Pods-SwiftUIxVIP-SwiftUIxVIPTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIxVIP-SwiftUIxVIPTests/Pods-SwiftUIxVIP-SwiftUIxVIPTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftUIxVIP-SwiftUIxVIPTests/Pods-SwiftUIxVIP-SwiftUIxVIPTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDDFBD1AEA2C86A059FDABBD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftUIxVIP-SwiftUIxVIPTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D73F769F4931019B537AECDB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftUIxVIP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		04BACE9C2A8A24B8000B1357 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -293,6 +393,7 @@
 /* Begin XCBuildConfiguration section */
 		04BACEA72A8A24B8000B1357 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AB891A285482FE2ED58117A /* Pods-SwiftUIxVIP-SwiftUIxVIPTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -311,6 +412,7 @@
 		};
 		04BACEA82A8A24B8000B1357 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9A02A37597CB017703951DE /* Pods-SwiftUIxVIP-SwiftUIxVIPTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -443,6 +545,7 @@
 		};
 		04CE7F2A2A88885A0069732B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D58D703B24C06D77BC328C9 /* Pods-SwiftUIxVIP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -472,6 +575,7 @@
 		};
 		04CE7F2B2A88885A0069732B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8CE9A06BD5322DABC55B4F4 /* Pods-SwiftUIxVIP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

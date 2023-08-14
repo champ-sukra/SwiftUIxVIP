@@ -12,7 +12,20 @@
 		<key>SwiftUIxVIP.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>4</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>04BACE9F2A8A24B8000B1357</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>04CE7F1A2A88885A0069732B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

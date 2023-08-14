@@ -68,4 +68,19 @@ final class ProfilePresenterTests: XCTestCase {
         //Then
         XCTAssertEqual(viewSpy.capturedDisplay.fullName, "fn ln")
     }
+    
+    func testPresentSomething_WhenSucceed_ShouldDisplayMaskedPhoneNo() throws {
+        //Given
+        sut.view = viewSpy
+        
+        //When
+        sut.presentSomething(response: ProfileModel.Response(firstName: "fn",
+                                                             lastName: "ln",
+                                                             phoneNo: "0432279244",
+                                                             linkedin: "",
+                                                             summary: ""))
+        
+        //Then
+        XCTAssertEqual(viewSpy.capturedDisplay.phoneNo, "0432279xxx", "[Fail] testPresentSomething_WhenSucceed_ShouldDisplayMaskedPhoneNo")
+    }
 }

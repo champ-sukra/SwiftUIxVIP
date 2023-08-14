@@ -16,10 +16,21 @@ final class ProfilePresenter: ProfilePresenterInterface {
     
     func presentSomething(response: ProfileModel.Response) {
         let fullName = response.firstName + " " + response.lastName
+        let phoneNo = maskPhoneNo(response.phoneNo)
         view?.displaySomething(display: ProfileModel.ViewModel(fullName: fullName,
-                                                               phoneNo: response.phoneNo,
+                                                               phoneNo: phoneNo,
                                                                linkedin: response.linkedin,
                                                                summary: response.summary))
+    }
+    
+    private func maskPhoneNo(_ phoneNo: String) -> String {
+        let maskNo = 3
+        guard phoneNo.count > maskNo else { return phoneNo }
+        
+        //0432279245
+        let pre = phoneNo.prefix(phoneNo.count - maskNo)
+        let masked = String(repeating: "x", count: maskNo)
+        return pre + masked
     }
 }
 

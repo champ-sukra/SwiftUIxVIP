@@ -1,0 +1,6 @@
+framework module Pods_SwiftUIxVIP {
+  umbrella header "Pods-SwiftUIxVIP-umbrella.h"
+
+  export *
+  module * { export * }
+}
